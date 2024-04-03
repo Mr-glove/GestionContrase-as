@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nr+U3ESXpsZxcJBdR808BUpacC7jdF+K6Ca0RSJ0nWhXfiwd4cJynGrmQwEwUxDEj+X+/cHW0OVVH9Lk3uT5FA==",
+  "dgSpecHash": "E8KCF0wpbezzUsAuAZMd+YyBGSOG0VTuXxms+2rWlzh0nuoxs+UH2J8RHo8fBt+JyHlwVYhDbIf0aaIz575YnQ==",
   "success": true,
-  "projectFilePath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\GestionContraseñas\\GestionContraseñas.csproj",
+  "projectFilePath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\CapaDatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piero\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\piero\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

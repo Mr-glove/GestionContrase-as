@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
+    "net8.0": {
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -145,19 +145,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "CapaDatos/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "System.Data.SqlClient": "4.8.6"
-        },
-        "compile": {
-          "bin/placeholder/CapaDatos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CapaDatos.dll": {}
         }
       }
     }
@@ -475,16 +462,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "CapaDatos/1.0.0": {
-      "type": "project",
-      "path": "../CapaDatos/CapaDatos.csproj",
-      "msbuildProject": "../CapaDatos/CapaDatos.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "CapaDatos >= 1.0.0"
+    "net8.0": [
+      "System.Data.SqlClient >= 4.8.6"
     ]
   },
   "packageFolders": {
@@ -493,31 +475,27 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\GestionContraseñas\\GestionContraseñas.csproj",
-      "projectName": "GestionContraseñas",
-      "projectPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\GestionContraseñas\\GestionContraseñas.csproj",
+      "projectUniqueName": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\CapaDatos.csproj",
+      "projectName": "CapaDatos",
+      "projectPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\CapaDatos.csproj",
       "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-      "outputPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\GestionContraseñas\\obj\\",
+      "outputPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net8.0-windows"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0-windows7.0": {
-          "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\CapaDatos.csproj": {
-              "projectPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContraseñas\\CapaDatos\\CapaDatos.csproj"
-            }
-          }
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -532,8 +510,14 @@
       }
     },
     "frameworks": {
-      "net8.0-windows7.0": {
-        "targetAlias": "net8.0-windows",
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.6, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -548,9 +532,6 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
