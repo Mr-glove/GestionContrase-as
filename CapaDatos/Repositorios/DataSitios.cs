@@ -15,6 +15,8 @@ namespace CapaDatos.Repositorios
         private string descripcion;
         private string contraseña_s;
         private int id_empleado;
+        public Valores estado;
+        
 
         public int ID_Sitio { get { return id_sitio; } set { id_sitio = value; } }
 
@@ -42,16 +44,78 @@ namespace CapaDatos.Repositorios
             parametros.Add(new SqlParameter("@nombre_s", nombre_s));
             parametros.Add(new SqlParameter("@descipcion", descripcion));
             parametros.Add(new SqlParameter("@contraseña_s", contraseña_s));
-            parametros.Add(new SqlParameter("@id_empleado", id_empleado));
+            parametros.Add(new SqlParameter("@id_e", id_empleado));
             ExecuteNonQuery(transactSql);
         }
+
+        public string DevolverContraseña(int id_sitio)
+        {
+            using (var conexion = ObtenerConexion())
+            {
+                conexion.Open();
+                using(var comando = new SqlCommand())
+                {
+                    comando.Connection = conexion;
+                    comando.CommandText = "VerContraseña";
+                    comando.CommandType = CommandType.StoredProcedure;
+                    comando.Parameters.AddWithValue("@id_sitio", id_sitio);
+                    SqlDataReader lector = comando.ExecuteReader();
+                    if (lector.HasRows)
+                    {
+                        string password = "";
+                        while (lector.Read())
+                        {
+                            password = lector.GetString(0);
+                        }
+                        return password;
+                    }
+                        
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+        }
+
+        public void EditarSitio()
+        {
+            string transactSql = "EditarSitio";
+            parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@nombre_s", nombre_s));
+            parametros.Add(new SqlParameter("@descripcion", Descripcion));
+            parametros.Add(new SqlParameter("@contraseña_s", contraseña_s));
+            parametros.Add(new SqlParameter("@id_sitio", id_sitio));
+            ExecuteNonQuery(transactSql);
+        }
+        private void EliminarSitio()
+        {
+            string transactSql = "EliminarSitio";
+            parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@id_sitio", id_sitio));
+            ExecuteNonQuery(transactSql);
+        }
+
         public string GuardarCambios()
         {
             string mensaje = null;
             try
             {
-                AgregarSitio();
-                mensaje = "Contraseña guardada";
+               switch (estado)
+                {
+                    case Valores.Agregar:
+                        AgregarSitio();
+                        mensaje = "Sitio guardado";
+                        break;
+                    case Valores.Editar:
+                        EditarSitio();
+                        mensaje = "Sitio Editado";
+                        break;
+                    case Valores.Eliminar:
+                        EliminarSitio();
+                        mensaje = "Sitio Eliminado";
+                        break;
+                }
             }
             catch (Exception)
             {
@@ -59,6 +123,14 @@ namespace CapaDatos.Repositorios
             }
 
             return mensaje;
+        }
+
+        public DataTable VerSitios()
+        {
+            string TransactSql = "select * from Sitios where id_empleado = "+ Cache.CacheSoftware.id_usuario;
+            parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@id_empleado", Cache.CacheSoftware.id_usuario));
+            return ExecuteReader(TransactSql);
         }
 
     }

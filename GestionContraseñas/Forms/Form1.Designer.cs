@@ -30,8 +30,8 @@
         {
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtUsuario = new TextBox();
+            txtContraseña = new TextBox();
             label2 = new Label();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -57,22 +57,22 @@
             label1.Text = "Usuario";
             label1.Click += label1_Click;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(130, 179);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 29);
-            textBox1.TabIndex = 3;
+            txtUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.Location = new Point(130, 179);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(225, 29);
+            txtUsuario.TabIndex = 3;
             // 
-            // textBox2
+            // txtContraseña
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(130, 251);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 29);
-            textBox2.TabIndex = 5;
-            textBox2.UseSystemPasswordChar = true;
+            txtContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContraseña.Location = new Point(130, 251);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(225, 29);
+            txtContraseña.TabIndex = 5;
+            txtContraseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -106,9 +106,9 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(387, 453);
             Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(txtContraseña);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtUsuario);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "Form1";
@@ -123,8 +123,8 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtUsuario;
+        private TextBox txtContraseña;
         private Label label2;
         private Button button1;
     }

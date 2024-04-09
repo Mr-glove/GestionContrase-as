@@ -30,31 +30,31 @@ namespace GestionContraseñas
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
-            textBox2 = new TextBox();
+            txtCorreo = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtNombre = new TextBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtDireccion = new TextBox();
             label4 = new Label();
             label5 = new Label();
-            textBox5 = new TextBox();
+            txtUsuario = new TextBox();
             label6 = new Label();
-            textBox4 = new TextBox();
+            txtContraseña = new TextBox();
             label7 = new Label();
-            textBox6 = new TextBox();
+            txtRepitaContraseña = new TextBox();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox2
+            // txtCorreo
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(32, 205);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 29);
-            textBox2.TabIndex = 16;
+            txtCorreo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCorreo.Location = new Point(32, 205);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(225, 29);
+            txtCorreo.TabIndex = 16;
             // 
             // label2
             // 
@@ -66,13 +66,14 @@ namespace GestionContraseñas
             label2.TabIndex = 15;
             label2.Text = "Correo ";
             // 
-            // textBox1
+            // txtNombre
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(32, 147);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 29);
-            textBox1.TabIndex = 14;
+            txtNombre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNombre.Location = new Point(32, 147);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(225, 29);
+            txtNombre.TabIndex = 14;
+            txtNombre.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -104,13 +105,13 @@ namespace GestionContraseñas
             label3.TabIndex = 13;
             label3.Text = "Direccion";
             // 
-            // textBox3
+            // txtDireccion
             // 
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(32, 263);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(225, 29);
-            textBox3.TabIndex = 14;
+            txtDireccion.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDireccion.Location = new Point(32, 263);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(225, 29);
+            txtDireccion.TabIndex = 14;
             // 
             // label4
             // 
@@ -132,13 +133,13 @@ namespace GestionContraseñas
             label5.TabIndex = 15;
             label5.Text = "Usuario";
             // 
-            // textBox5
+            // txtUsuario
             // 
-            textBox5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(32, 321);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(225, 29);
-            textBox5.TabIndex = 16;
+            txtUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.Location = new Point(32, 321);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(225, 29);
+            txtUsuario.TabIndex = 16;
             // 
             // label6
             // 
@@ -150,13 +151,13 @@ namespace GestionContraseñas
             label6.TabIndex = 13;
             label6.Text = "Contraseña";
             // 
-            // textBox4
+            // txtContraseña
             // 
-            textBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(32, 379);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(225, 29);
-            textBox4.TabIndex = 14;
+            txtContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContraseña.Location = new Point(32, 379);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(225, 29);
+            txtContraseña.TabIndex = 14;
             // 
             // label7
             // 
@@ -168,13 +169,13 @@ namespace GestionContraseñas
             label7.TabIndex = 15;
             label7.Text = "Repita Contraseña";
             // 
-            // textBox6
+            // txtRepitaContraseña
             // 
-            textBox6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(32, 437);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(225, 29);
-            textBox6.TabIndex = 16;
+            txtRepitaContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRepitaContraseña.Location = new Point(32, 437);
+            txtRepitaContraseña.Name = "txtRepitaContraseña";
+            txtRepitaContraseña.Size = new Size(225, 29);
+            txtRepitaContraseña.TabIndex = 16;
             // 
             // button1
             // 
@@ -189,7 +190,7 @@ namespace GestionContraseñas
             button1.TabIndex = 17;
             button1.Text = "Registrarse";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += this.button1_Click;
+            button1.Click += button1_Click;
             // 
             // Registro
             // 
@@ -198,18 +199,18 @@ namespace GestionContraseñas
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(294, 579);
             Controls.Add(button1);
-            Controls.Add(textBox6);
+            Controls.Add(txtRepitaContraseña);
             Controls.Add(label7);
-            Controls.Add(textBox5);
+            Controls.Add(txtUsuario);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(textBox4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox3);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtCorreo);
+            Controls.Add(txtDireccion);
             Controls.Add(label6);
             Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtNombre);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             MaximizeBox = false;
@@ -234,20 +235,20 @@ namespace GestionContraseñas
 
         #endregion
 
-        private TextBox textBox2;
+        private TextBox txtCorreo;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtNombre;
         private Label label1;
         private PictureBox pictureBox1;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtDireccion;
         private Label label4;
         private Label label5;
-        private TextBox textBox5;
+        private TextBox txtUsuario;
         private Label label6;
-        private TextBox textBox4;
+        private TextBox txtContraseña;
         private Label label7;
-        private TextBox textBox6;
+        private TextBox txtRepitaContraseña;
         private Button button1;
     }
 }

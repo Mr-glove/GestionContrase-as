@@ -30,6 +30,8 @@ namespace CapaDatos.Repositorios
 
         public string Contraseña { get { return contraseña_e; } set { contraseña_e = value; } }
 
+        public int ID { get { return id; } set { id = value; } }
+
         public DataEmpleados()
         {
             id_empleado = ID_empleado;
@@ -38,6 +40,7 @@ namespace CapaDatos.Repositorios
             direccion = Direccion;
             Usuario_e = Usuario_e;
             contraseña_e = Contraseña;
+            id = ID;
         }
 
         private void AgregarEmpleado()
@@ -46,7 +49,7 @@ namespace CapaDatos.Repositorios
             parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@nombre_e", nombre_e));
             parametros.Add(new SqlParameter("@correo", correo));
-            parametros.Add(new SqlParameter("@direccion", direccion));
+            parametros.Add(new SqlParameter("@direccion_e", direccion));
             parametros.Add(new SqlParameter("@usuario_e", usuario_e));
             parametros.Add(new SqlParameter("@contraseña_e", contraseña_e));
             parametros.Add(new SqlParameter("@id", id));

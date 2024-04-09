@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\verificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\verificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\verificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\verificarcontrase\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\centro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\centro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\centro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\centro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\capadatos\\repositorios\\datasitios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\repositorios\\datasitios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\capadatos\\repositorios\\valores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\repositorios\\valores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\gestioncontrase\u00F1as\\forms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0FF81BC-8CAE-41C7-9D2B-CA6BC4C29452}|GestionContrase\u00F1as\\GestionContrase\u00F1as.csproj|solutionrelative:gestioncontrase\u00F1as\\forms\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|d:\\piero\\programas\\c#\\gestioncontras\\gestioncontrase\u00F1as\\capadatos\\cache\\cachesoftware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B08FE59E-E40C-4CC1-A83D-A4D630FE56D5}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\cache\\cachesoftware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +42,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataSitios.cs",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Repositorios\\DataSitios.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Repositorios\\DataSitios.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Repositorios\\DataSitios.cs",
+              "RelativeToolTip": "CapaDatos\\Repositorios\\DataSitios.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T22:51:47.006Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Centro.cs",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAlwDsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T22:52:01.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Centro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\Centro.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Centro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\Centro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T22:50:35.622Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Valores.cs",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Repositorios\\Valores.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Repositorios\\Valores.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Repositorios\\Valores.cs",
+              "RelativeToolTip": "CapaDatos\\Repositorios\\Valores.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:32:27.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VerificarContrase\u00F1a.cs",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAvwCIAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:09:33.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VerificarContrase\u00F1a.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\VerificarContrase\u00F1a.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T22:35:29.703Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registro.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Registro.cs",
+              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\Registro.cs",
+              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Registro.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\Registro.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T23:09:30.365Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Form1.cs",
               "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\Form1.cs",
@@ -35,32 +144,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T19:07:22.745Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "GestionContrase\u00F1as\\Forms\\Form1.Designer.cs",
-              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\GestionContrase\u00F1as\\Forms\\Form1.Designer.cs",
-              "RelativeToolTip": "GestionContrase\u00F1as\\Forms\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T19:07:19.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CacheSoftware.cs",
-              "DocumentMoniker": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Cache\\CacheSoftware.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\Cache\\CacheSoftware.cs",
-              "ToolTip": "D:\\Piero\\Programas\\C#\\GestionContras\\GestionContrase\u00F1as\\CapaDatos\\Cache\\CacheSoftware.cs",
-              "RelativeToolTip": "CapaDatos\\Cache\\CacheSoftware.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T18:33:28.872Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            textBox2 = new TextBox();
+            button2 = new Button();
+            button1 = new Button();
+            txtDescripcion = new TextBox();
+            label3 = new Label();
+            txtContraseña = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtCorreo = new TextBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            label3 = new Label();
-            textBox3 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
             dataGridView1 = new DataGridView();
             button3 = new Button();
             button4 = new Button();
@@ -52,27 +52,77 @@
             // 
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(txtDescripcion);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtContraseña);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtCorreo);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Right;
+            panel1.Enabled = false;
             panel1.Location = new Point(607, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(365, 501);
             panel1.TabIndex = 0;
             // 
-            // textBox2
+            // button2
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(41, 230);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(287, 29);
-            textBox2.TabIndex = 16;
-            textBox2.UseSystemPasswordChar = true;
+            button2.BackColor = Color.RoyalBlue;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(189, 418);
+            button2.Name = "button2";
+            button2.Size = new Size(139, 33);
+            button2.TabIndex = 17;
+            button2.Text = "Cancelar";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.RoyalBlue;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(41, 418);
+            button1.Name = "button1";
+            button1.Size = new Size(139, 33);
+            button1.TabIndex = 17;
+            button1.Text = "Guardar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // txtDescripcion
+            // 
+            txtDescripcion.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtDescripcion.Location = new Point(41, 286);
+            txtDescripcion.Multiline = true;
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(287, 110);
+            txtDescripcion.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(41, 262);
+            label3.Name = "label3";
+            label3.Size = new Size(91, 21);
+            label3.TabIndex = 15;
+            label3.Text = "Descripcion";
+            // 
+            // txtContraseña
+            // 
+            txtContraseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContraseña.Location = new Point(41, 230);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(287, 29);
+            txtContraseña.TabIndex = 16;
+            txtContraseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -84,13 +134,13 @@
             label2.TabIndex = 15;
             label2.Text = "Contraseña";
             // 
-            // textBox1
+            // txtCorreo
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(41, 173);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(287, 29);
-            textBox1.TabIndex = 14;
+            txtCorreo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCorreo.Location = new Point(41, 173);
+            txtCorreo.Name = "txtCorreo";
+            txtCorreo.Size = new Size(287, 29);
+            txtCorreo.TabIndex = 14;
             // 
             // label1
             // 
@@ -112,57 +162,11 @@
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(41, 262);
-            label3.Name = "label3";
-            label3.Size = new Size(91, 21);
-            label3.TabIndex = 15;
-            label3.Text = "Descripcion";
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(41, 286);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(287, 110);
-            textBox3.TabIndex = 16;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.RoyalBlue;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(41, 418);
-            button1.Name = "button1";
-            button1.Size = new Size(139, 33);
-            button1.TabIndex = 17;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.RoyalBlue;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(189, 418);
-            button2.Name = "button2";
-            button2.Size = new Size(139, 33);
-            button2.TabIndex = 17;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(12, 173);
             dataGridView1.Name = "dataGridView1";
@@ -182,6 +186,7 @@
             button3.TabIndex = 17;
             button3.Text = "Ver";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -211,6 +216,7 @@
             button5.TabIndex = 17;
             button5.Text = "Crear";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -250,12 +256,12 @@
         #endregion
 
         private Panel panel1;
-        private TextBox textBox2;
+        private TextBox txtContraseña;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtCorreo;
         private Label label1;
         private PictureBox pictureBox1;
-        private TextBox textBox3;
+        private TextBox txtDescripcion;
         private Label label3;
         private Button button2;
         private Button button1;

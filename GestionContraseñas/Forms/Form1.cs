@@ -1,3 +1,4 @@
+using CapaDatos.Repositorios;
 namespace GestionContraseñas
 {
     public partial class Form1 : Form
@@ -14,9 +15,19 @@ namespace GestionContraseñas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
-            this.Hide();
+
+            DataEmpresa obj = new DataEmpresa();
+            bool valido = obj.login(txtUsuario.Text, txtContraseña.Text);
+            if (valido)
+            {
+                Login log = new Login();
+                log.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario/Contraseña incorrecto")
+            }
         }
     }
 }

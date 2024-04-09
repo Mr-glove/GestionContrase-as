@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox2 = new TextBox();
+            txtContrseña = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            txtUsuario = new TextBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
@@ -39,14 +39,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // textBox2
+            // txtContrseña
             // 
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(22, 227);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 29);
-            textBox2.TabIndex = 10;
-            textBox2.UseSystemPasswordChar = true;
+            txtContrseña.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContrseña.Location = new Point(22, 227);
+            txtContrseña.Name = "txtContrseña";
+            txtContrseña.Size = new Size(225, 29);
+            txtContrseña.TabIndex = 10;
+            txtContrseña.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -58,13 +58,13 @@
             label2.TabIndex = 9;
             label2.Text = "Contraseña";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(22, 164);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 29);
-            textBox1.TabIndex = 8;
+            txtUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsuario.Location = new Point(22, 164);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(225, 29);
+            txtUsuario.TabIndex = 8;
             // 
             // label1
             // 
@@ -131,9 +131,9 @@
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
-            Controls.Add(textBox2);
+            Controls.Add(txtContrseña);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtUsuario);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             MaximizeBox = false;
@@ -148,9 +148,9 @@
 
         #endregion
 
-        private TextBox textBox2;
+        private TextBox txtContrseña;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtUsuario;
         private Label label1;
         private PictureBox pictureBox1;
         private Button button1;

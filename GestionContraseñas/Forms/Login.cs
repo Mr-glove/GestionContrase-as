@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDatos.Repositorios;
 
 namespace GestionContraseñas
 {
@@ -19,9 +20,18 @@ namespace GestionContraseñas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Centro cs = new Centro();
-            cs.Show();
-            this.Hide();
+            DataEmpleados obj = new DataEmpleados();
+            bool valido = obj.login(txtUsuario.Text, txtContrseña.Text);
+            if(valido)
+            {
+                Centro cs = new Centro();
+                cs.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario/Contraseña incorrecto");
+            }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

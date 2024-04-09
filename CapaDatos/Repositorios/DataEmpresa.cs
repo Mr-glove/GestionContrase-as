@@ -35,6 +35,8 @@ namespace CapaDatos.Repositorios
             contraseña = Contraseña;
         }
 
+
+        //Iniciar sesion
         public bool login(string usuario, string contraseña)
         {
             using (var conexion = ObtenerConexion())
