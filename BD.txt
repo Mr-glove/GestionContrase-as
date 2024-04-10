@@ -1,0 +1,111 @@
+create database SystemPass
+use SystemPass
+go
+create table Empresa(
+id int primary key identity (1,1),
+nombre varchar(40),
+direccion varchar(60),
+usuario varchar(20) unique,
+contraseña varbinary(8000)
+)
+go
+
+create table Empleados(
+id_empleado int primary key identity(1,1),
+nombre_e varchar(60),
+correo nvarchar(30) unique,
+direccion_e nvarchar(60),
+usuario_e varchar(60),
+contraseña_e varbinary(8000),
+id int foreign key reference Empresa(id)
+)
+go
+
+create table Sitios(
+id_sitio int primary key identity (1,1),
+nombre_s nvarchar(60),
+descripcion varchar(100),
+contraseña_s varbinary(8000),
+id_empleado int foreign key references Empleados(id_empleado))
+go
+
+create procedure RegistrarEmpresa
+	@nombre varchar(40),
+	@direccion varchar(60),
+	@usuario varchar(20),
+	@contraseña nvarchar(30),
+as
+begin
+	insert into Empresa values (
+	@nombre,
+	@direccion,
+	@usuario,
+	ENCRYPTBYPASSPHRASE('password',@contraseña)
+)
+end
+go
+
+create procedure RegistrarEmpleado
+	@nombre_e varchar(60),
+	@correo nvarchar(30),
+	@direccion_e nvarchar(60),
+	@usuario_e varchar(60),
+	@contraseña_e nvarchar(30),
+	@id int
+as
+begin
+	insert into Empleados values (
+	@nombre_e,
+	@correo,
+	@direccion_e,
+	@usuario_e,
+	ENCRYPTBYPASSPHRASE('password',@contraseña_e),
+	@id
+)
+end
+go
+
+create procedure RegistrarSitio
+	@nombre_s varchar(60),
+	@descripcion varchar(100),
+	@contraseña_s nvarchar(30),
+	@id_e int
+as
+begin
+	insert into Sitios values (
+	@nombre_s,
+	@descripcion
+	ENCRYPTBYPASSPHRASE('password',@contraseña_s),
+	@id_e
+)
+end
+go
+
+create procedure VerContraseña
+	@id_sitio int
+as
+begin
+	select Conver(nvarchar(max),DECRYPTBYPASSPHRASE('password', contraseña_s)) from Sitios
+	where id_sitio = @id_sitio
+end
+go
+
+create procedure EditarSitio
+	@nombre_s varchar(60),
+	@descripcion varchar(100),
+	@contraseña_s nvarchar(30),
+	@id_sitio int
+as
+begin
+	update Sitios set nombre_s = @nombre_s, descripcion = @descripcion, contraseña_s = ENCRYPTBYPASSPHRASE('password',@contraseña_s)
+	where id_sitio = @id_sitio
+end
+go
+
+create procedure EliminarSitio
+	@id_sitio int
+as
+begin
+	delete from Sitios where id_sitio = @id_stitio
+end
+go
